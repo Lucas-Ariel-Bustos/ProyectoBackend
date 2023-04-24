@@ -10,7 +10,7 @@ class ProductManager {
 
         for (let i = 0; i < this.products.length; i++) {
             if(this.products[i].code === code) {
-                console.log(`El código ${code} está repetido`)
+                return console.log(`El código ${code} está repetido`)
             }
         }
 
@@ -31,7 +31,7 @@ class ProductManager {
                 id:ProductManager.id 
             });
         } else {
-            console.log(`No puedo acceder!! Se necesitan todas los campos completos!!`)
+            return console.log('No puedo acceder!! Se necesitan todas los campos completos!!')
         }
 
     }
