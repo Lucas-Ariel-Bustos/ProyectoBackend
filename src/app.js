@@ -7,7 +7,6 @@ app.use(express.urlencoded({ extended: true }));
 const productos = new ProductManager();
 const respProduct = productos.respProduct();
 
-
 app.get("/products", async (req, res) => {
     let limit = parseInt(req.query.limit);
     if (!limit) return res.send(await respProduct)
